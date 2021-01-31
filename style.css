@@ -1,22 +1,42 @@
-body {
-    background-color: dodgerblue;
-  }
-  
-  h1 {
-      text-align: center;
-  }
-  .secret-div {
-    text-align: center;
-    display: none;
-  }
-  
-  #my-canvas {
-    position: absolute;
-  }
+* {
+  /*css reset*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
 
-  ul {
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
+}
+  
+h1 {
+  text-align: center;
+}
+.secret-div {
+  text-align: center;
+  display: none;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+h1 {
+  font-size: 96px;
 }

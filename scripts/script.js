@@ -1,4 +1,5 @@
 const secretDiv = document.querySelector('.secret-div');
+const main = document.querySelector('main');
 
 const keys = [];
 const secretCode = ['i','c','e','s','h','a','r','k'];
@@ -14,10 +15,11 @@ function keysDetector(e) {
     }
     if (JSON.stringify(keys) === JSON.stringify(secretCode)){
         secretDiv.style.display = 'block';
+        main.style.display = 'none';
         //confetti.render();
 
         anime({
-            targets:'body',
+            targets:'.secret-div',
             rotate: '1turn',
             backgroundColor: '#fcba03',
             duration: 2000,
