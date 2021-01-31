@@ -1,0 +1,19 @@
+body {
+    background-color: dodgerblue;
+  }
+  
+  .secret-div {
+    text-align: center;
+    display: none;
+  }
+  
+  #my-canvas {
+    position: absolute;
+  }
+
+  ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
