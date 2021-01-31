@@ -2,6 +2,9 @@ body {
     background-color: dodgerblue;
   }
   
+  h1 {
+      text-align: center;
+  }
   .secret-div {
     text-align: center;
     display: none;
