@@ -8,7 +8,10 @@ const secretCode = ['i','c','e','s','h','a','r','k'];
 
 function keysDetector(e) {
     keys.push(e.key);
-
+    if (keys.length > secretCode.length){
+        keys.shift();
+        console.log(keys);
+    }
     if (JSON.stringify(keys) === JSON.stringify(secretCode)){
         secretDiv.style.display = 'block';
         //confetti.render();
@@ -19,9 +22,6 @@ function keysDetector(e) {
             backgroundColor: '#fcba03',
             duration: 2000,
         }) 
-    }
-    if (keys.length > secretCode.length){
-        keys.shift();
     }
 }
 
