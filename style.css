@@ -46,7 +46,7 @@ ul {
 }
 
 #self-intro {
-  background-color: #2b5a56de;
+  background-color: #557c88d8;
   margin: auto;
   width: 70%;
   padding: 3em;
@@ -92,5 +92,20 @@ p {
 }
 
 #self-intro p {
-  padding-top: 2em;
+  padding: 2em 0;
+}
+
+a:visited {
+  color: inherit;
+}
+
+#projects {
+  text-align: center;
+}
+#project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  grid-gap: 2em 1em;
+  justify-items: center;
+  align-items: center;
 }
