@@ -11,6 +11,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
   
 h1 {
@@ -30,13 +31,35 @@ ul {
 
 #home {
   height: 100vh;
-  font-family: 'Ubuntu', sans-serif;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   color: white;
 }
 
+#about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#self-intro {
+  background-color: #99999955;
+  margin: auto;
+  width: 50%;
+  padding: 32px;
+  border-radius: 16px;
+}
+
 h1 {
-  font-size: 96px;
+  font-size: 108px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
 }

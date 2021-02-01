@@ -21,7 +21,7 @@ function keysDetector(e) {
         anime({
             targets:'.secret-div',
             rotate: '1turn',
-            backgroundColor: '#fcba03',
+            backgroundColor: '',
             duration: 2000,
         }) 
     }
