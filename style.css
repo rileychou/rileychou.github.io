@@ -42,7 +42,7 @@ ul {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #00a1be;
+  background-color: #08262c;
 }
 
 #self-intro {
@@ -68,8 +68,14 @@ ul {
   border: 4px solid #006D75;
 }
 
-#resume {
+#buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bttn {
   padding: 8px;
+  margin-right: 2em;
   border-radius: 8px;
   border: 2px solid white;
   width:fit-content;
@@ -95,6 +101,9 @@ p {
   padding: 2em 0;
 }
 
+a {
+  color: inherit;
+}
 a:visited {
   color: inherit;
 }
@@ -108,4 +117,23 @@ a:visited {
   grid-gap: 2em 1em;
   justify-items: center;
   align-items: center;
+}
+
+#projects h2 {
+  padding: 2em 0;
+}
+
+.project-item {
+  background-color: #daecf0;
+}
+
+
+footer {
+  padding: 1em 10vw;
+  text-align: center;
+}
+
+#foot-container {
+  font-size: 1.5rem; 
+  color: black;
 }
