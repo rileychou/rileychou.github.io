@@ -42,14 +42,37 @@ ul {
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: #00a1be;
 }
 
 #self-intro {
-  background-color: #99999955;
+  background-color: #2b5a56de;
   margin: auto;
-  width: 50%;
-  padding: 32px;
+  width: 70%;
+  padding: 3em;
   border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0px 3px 16px 1px #44444499;;
+}
+
+#intro-text {
+  padding-right: 1em;
+}
+
+#me {
+  width: 280px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #006D75;
+}
+
+#resume {
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid white;
+  width:fit-content;
 }
 
 h1 {
@@ -62,4 +85,12 @@ h2 {
 
 h3 {
   font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+#self-intro p {
+  padding-top: 2em;
 }
