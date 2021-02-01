@@ -90,7 +90,15 @@ h2 {
 }
 
 h3 {
+  font-size: 28px;
+}
+
+h4 {
   font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
 }
 
 p {
@@ -127,10 +135,47 @@ a:visited {
   background-color: #daecf0;
 }
 
+#clubs h2 {
+  padding: 1em 0;
+  text-align: center;
+}
+
+#clubs {
+  padding: 1em 10vw;
+}
+
+#clubbos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.club-holder {
+  width: 100%;
+  padding: 1em 0;
+}
+
+.left {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.right {
+  text-align: right;
+  align-items: flex-end;
+}
 
 footer {
   padding: 1em 10vw;
   text-align: center;
+}
+
+.club-holder p {
+  width: 80%;
+}
+.right p{
+  margin-left: auto;
+  margin-right: 0;
 }
 
 #foot-container {
