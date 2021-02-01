@@ -111,6 +111,7 @@ p {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 a:visited {
   color: inherit;
@@ -142,6 +143,8 @@ a:visited {
 
 #clubs {
   padding: 1em 10vw;
+  background-color: #557c88;
+  color: white;
 }
 
 #clubbos {
@@ -153,6 +156,10 @@ a:visited {
 .club-holder {
   width: 100%;
   padding: 1em 0;
+}
+
+.club-holder h5 {
+  padding: 0.5em 0;
 }
 
 .left {
@@ -168,6 +175,8 @@ a:visited {
 footer {
   padding: 1em 10vw;
   text-align: center;
+  background-color: #557c88;
+  color: white;
 }
 
 .club-holder p {
@@ -180,5 +189,29 @@ footer {
 
 #foot-container {
   font-size: 1.5rem; 
-  color: black;
+}
+
+#foot-container a {
+  padding-left: 0.5em;
+}
+
+.footer-info {
+  padding: 0.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info ul li{
+  list-style: none;
+  display: inline;
+}
+
+.footer-info ul li::after{
+  padding: 0 0.25em;
+  content: " \00b7";
+}
+
+.footer-info ul li:last-child::after{
+  content: none;
 }
