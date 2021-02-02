@@ -131,11 +131,11 @@ p {
 }
 
 a {
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 a:visited {
-  color: inherit;
+  color: white;
 }
 
 #projects {
