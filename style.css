@@ -22,6 +22,10 @@ h1 {
   display: none;
 }
 
+.secret-div ul li a{
+  color: black;
+}
+
 ul {
   text-align: center;
   list-style-type: none;
