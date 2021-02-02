@@ -120,9 +120,10 @@ a:visited {
 #projects {
   text-align: center;
 }
+
 #project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-gap: 2em 1em;
   justify-items: center;
   align-items: center;
@@ -133,7 +134,20 @@ a:visited {
 }
 
 .project-item {
-  background-color: #daecf0;
+  border-radius: 16px;
+  background-color: #557c88;
+  width: 300px;
+  padding: 16px;
+}
+
+.project-item h4{
+  padding-bottom: 16px;
+}
+
+
+.project-item img {
+  width: 200px;
+  height: auto;
 }
 
 #clubs h2 {
