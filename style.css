@@ -42,11 +42,11 @@ ul {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #08222c;
+  background-color: #002A39;
 }
 
 #self-intro {
-  background-color: #557c88d8;
+  background-color: #428D9F;
   margin: auto;
   width: 70%;
   padding: 2em 3em;
@@ -141,6 +141,8 @@ a:visited {
 #projects {
   text-align: center;
   padding: 2em 10vw;
+  background-color: #002A39;
+  color: white;
 }
 
 #project-grid {
@@ -154,7 +156,7 @@ a:visited {
 
 .project-item {
   border-radius: 16px;
-  background-color: #557c88;
+  background-color: #428D9F;
   width: 280px;
   padding: 16px;
 }
@@ -175,7 +177,7 @@ a:visited {
 
 #clubs {
   padding: 1em 10vw;
-  background-color: #557c88;
+  background-color: #428D9F;
   color: white;
 }
 
@@ -194,6 +196,10 @@ a:visited {
   padding: 0.5em 0;
 }
 
+.club-holder p {
+  width: 80%;
+}
+
 .left {
   text-align: left;
   align-items: flex-start;
@@ -207,13 +213,14 @@ a:visited {
 footer {
   padding: 1em 10vw;
   text-align: center;
-  background-color: #557c88;
+  background-color: #002A39;
   color: white;
 }
 
-.club-holder p {
-  width: 80%;
+hr {
+  border-top: 2px solid white;
 }
+
 .right p{
   margin-left: auto;
   margin-right: 0;
@@ -227,15 +234,30 @@ footer {
   font-size: 1.5rem;
 }
 
-#foot-container a {
+footer a {
   padding-left: 0.5em;
+  transition: transform 0.25s;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: #A0E9FC;
+  transform: scale(1.1);
 }
 
 .footer-info {
-  padding: 0.5em 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#top-foot {
+  padding-top: 1.5em;
+  padding-bottom: 0.25em;
+}
+
+#bottom-foot {
+  padding: 1em 0;
 }
 
 .footer-info ul li{
@@ -269,6 +291,14 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 0;
+  }
+
+  #top-foot {
+    padding-top: 1em;
+    padding-bottom: 0;
+  }
+  #bottom-foot {
+    padding-top: 0;
   }
   .footer-info div {
     padding: 0.25em;
