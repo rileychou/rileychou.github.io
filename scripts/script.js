@@ -31,7 +31,7 @@ function goBack() {
     main.style.display = 'block';
     main.scrollIntoView();
     footer.style.display = 'block';
-    setTimeout(() => { secretDiv.style.display = 'none'; }, 450);
+    setTimeout(() => { secretDiv.style.display = 'none'; }, 500);
 }
 
 window.addEventListener('keyup', keysDetector);
