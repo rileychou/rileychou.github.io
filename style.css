@@ -72,7 +72,7 @@ ul {
   display: flex;
   justify-content: space-between;
   color: white;
-  box-shadow: 0px 3px 16px 1px #44444499;;
+  box-shadow: 0px 3px 16px 1px #44444499;
 }
 
 #intro-text {
@@ -177,6 +177,7 @@ a:visited {
   background-color: #428D9F;
   width: 280px;
   padding: 16px;
+  box-shadow: 0px 3px 16px 1px #44444499;
 }
 
 .project-item h4{
@@ -207,7 +208,7 @@ a:visited {
 
 .club-holder {
   width: 100%;
-  padding: 1em 0;
+  padding: 2em 0;
 }
 
 .club-holder h5 {
@@ -221,11 +222,29 @@ a:visited {
 .left {
   text-align: left;
   align-items: flex-start;
+  opacity: 0;
+  transform: translateX(-2em);
+  transition: transform 1s .25s ease-out, opacity 0.3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .right {
   text-align: right;
   align-items: flex-end;
+  opacity: 0;
+  transform: translateX(2em);
+  transition: transform 1s .25s ease-out, opacity 0.3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 footer {
@@ -346,10 +365,26 @@ footer a:hover {
   p {
     font-size: 16px;
   }
+  .project-item {
+    border-radius: 16px;
+    background-color: #428D9F;
+    width: 200px;
+    padding: 16px;
+  }
+  #projects {
+    padding: 2em 0;
+  }
 }
 
 @media (max-height: 700px){
   p {
-    font-size: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-height: 600px){
+  #about {
+    height: auto;
+    padding: 1em 0;
   }
 }
