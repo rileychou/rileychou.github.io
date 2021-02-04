@@ -2,6 +2,7 @@ const secretDiv = document.querySelector('.secret-div');
 const main = document.querySelector('main');
 const footer = document.querySelector('footer');
 const backButton = document.getElementById('back-button');
+const body = document.body;
 
 const keys = [];
 const secretCode = ['i', 'c', 'e', 's', 'h', 'a', 'r', 'k'];
@@ -20,6 +21,7 @@ function keysDetector(e) {
         console.log(keys);
     }
     if (JSON.stringify(keys) === JSON.stringify(secretCode)) {
+        body.style.backgroundColor = "#ffffff";
         main.style.display = 'none';
         footer.style.display = 'none';
         secretDiv.style.display = 'block';
@@ -28,6 +30,7 @@ function keysDetector(e) {
 }
 
 function goBack() {
+    body.style.backgroundColor = "#002A39";
     main.style.display = 'block';
     main.scrollIntoView();
     footer.style.display = 'block';
