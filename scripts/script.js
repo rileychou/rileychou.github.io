@@ -30,7 +30,7 @@ function keysDetector(e) {
 }
 
 function goBack() {
-    body.style.backgroundColor = "#002A39";
+    body.style.removeProperty("background-color");
     main.style.display = 'block';
     main.scrollIntoView();
     footer.style.display = 'block';
