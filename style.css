@@ -276,6 +276,14 @@ hr {
   margin-right: 0;
 }
 
+.skill-item h3 {
+  padding: 0.25em 0;
+}
+
+.skill-item p {
+  padding: 0.25em 0;
+}
+
 #foot-container {
   font-size: 1.5rem; 
 }
