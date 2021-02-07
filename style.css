@@ -360,10 +360,9 @@ footer a:hover {
   content: none;
 }
 
-@media (min-width: 2000px){
-  .general-grid {
+@media (min-width: 1600px){
+  #skills-div .general-grid {
     grid-template-columns: repeat(4, minmax(300px, 1fr));
-    
   }
   .club-holder p {
     width: 60%;
