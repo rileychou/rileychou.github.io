@@ -67,10 +67,38 @@ ul {
   color: white;
 }
 
+#home a {
+  position: absolute;
+  bottom: 2em;
+}
+
+#arrow {
+  width: 56px;
+  height: auto;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
 #about {
   height: 100vh;
   display: flex;
   align-items: center;
+}
+
+@keyframes bounce{
+  0%, 20%, 50%, 70%, 100% {
+    transform: translateY(0);
+  } 
+  40% {
+    transform: translateY(-20px);
+  } 
+  60% {
+    transform: translateY(-10px);
+  } 
+  80% {
+    transform: translateY(-5px);
+  }
 }
 
 #self-intro {
@@ -332,6 +360,15 @@ footer a:hover {
   content: none;
 }
 
+@media (min-width: 2000px){
+  .general-grid {
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    
+  }
+  .club-holder p {
+    width: 60%;
+  }
+}
 @media (max-width: 1200px){
   .general-grid {
     grid-template-columns: repeat(2, minmax(300px, 1fr));
