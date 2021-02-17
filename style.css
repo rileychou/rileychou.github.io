@@ -231,6 +231,12 @@ a:visited {
   height: auto;
 }
 
+#skills {
+  text-align: center;
+  padding: 2em 10vw;
+  color: white;
+}
+
 #clubs h2 {
   padding: 1em 0;
   text-align: center;
@@ -322,13 +328,13 @@ hr {
 
 footer a {
   padding-left: 0.5em;
-  transition: transform 0.25s;
+  transition: transform 0.75s;
   display: inline-block;
 }
 
 footer a:hover {
   color: #A0E9FC;
-  transform: scale(1.1);
+  transform: scale(1.12);
 }
 
 .footer-info {
